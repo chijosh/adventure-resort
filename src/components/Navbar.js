@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Logo from "../images/logo.svg";
-import { FaAlignRight } from "react-icons/fa";
+// import { FaAlignRight } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 export default class Navbar extends Component {
@@ -13,32 +13,35 @@ export default class Navbar extends Component {
   };
   render() {
     return (
-      <nav className="navbar">
-        <div className="nav-center">
-          <div className="nav-header">
-            <Link to="/">
-              <img src={Logo} alt="Beach Resort" />
-            </Link>
-            <button
-              type="button"
-              className="nav-btn"
-              onClick={this.handleToggle}
-            >
-              <FaAlignRight className="nav-icon" />
-            </button>
-          </div>
-          <ul
-            className={this.state.isOpen ? "nav-links show-nav" : "nav-links"}
-          >
-            <li>
-              <Link to="/">Home</Link>
+      <div className="header__content">
+        <nav className="header__nav-wrap">
+          <h2 className="header__nav-heading h6">Site Navigation</h2>
+
+          <Link to="/">
+            <img src={Logo} alt="Beach Resort" />
+          </Link>
+
+          <ul className="header__nav">
+            <li className="current"><a href="/" title="">Home</a></li>
+            <li className="has-children">
+              <a href="#0" title="">Rooms</a>
+              <ul className="sub-menu">
+                <li><a href="/category">Lifestyle</a></li>
+                <li><a href="/category">Health</a></li>
+                <li><a href="/category">Family</a></li>
+                <li><a href="/category">Management</a></li>
+                <li><a href="/category">Travel</a></li>
+                <li><a href="/category">Work</a></li>
+              </ul>
             </li>
-            <li>
-              <Link to="/rooms">Rooms</Link>
-            </li>
+
+            <li><a href="/register" title="">Sign Up</a></li>
+            <li><a href="/login" title="">Login</a></li>
           </ul>
-        </div>
-      </nav>
+
+          <a href="#0" title="Close Menu" className="header__overlay-close close-mobile-menu">Close</a>
+        </nav>
+      </div>
     );
   }
 }

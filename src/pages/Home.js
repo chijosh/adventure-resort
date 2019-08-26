@@ -4,21 +4,22 @@ import Banner from "../components/Banner";
 // import Header from "../components/Header";
 import { Link } from "react-router-dom";
 import Services from "../components/Services";
+// import Navbar from "../components/Navbar";
 
 export default function Home() {
   return (
-    <>
+    <div className="page">
       <Hero hero="defaultHero">
         <Banner
-          title="luxurious rooms"
-          subtitle="deluxe rooms starting at $299"
+          title="Best Resort Services"
+          subtitle="deluxe rooms starting at $500"
         >
           <Link to="/rooms" className="main-btn slide-btn">
-            our rooms
+            Book Now
           </Link>
         </Banner>
       </Hero>
       <Services />
-    </>
+    </div>
   );
 }

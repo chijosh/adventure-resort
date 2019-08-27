@@ -9,6 +9,7 @@ import Register from "./pages/register/Register";
 import Login from "./pages/login/Login";
 import Error from "./pages/Error";
 import Navbar from "./components/Navbar";
+import Loader from '../src/components/loader/loader';
 
 import { Route, Switch, withRouter } from "react-router-dom";
 
@@ -18,10 +19,17 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      prevDepth: this.getPathDepth(this.props.location)
+      prevDepth: this.getPathDepth(this.props.location),
+      loading: true
     };
   }
-
+  componentDidMount() {
+    setTimeout(() => {
+      this.setState({
+        loading: false
+      })
+    }, 2000);
+  }
   componentWillReceiveProps() {
     this.setState({ prevDepth: this.getPathDepth(this.props.location) });
   }
@@ -60,9 +68,15 @@ class App extends React.Component {
             >
               <Switch location={location}>
                 <Route exact path="/" component={Home} />
-                <Route exact path="/rooms/" component={Rooms} />
-                <Route exact path="/register/" component={Register} />
-                <Route exact path="/login/" component={Login} />
+                <Route exact path="/rooms/" render={() => (
+                  this.state.loading ?
+                    <Loader /> : <Rooms />)} />
+                <Route exact path="/register/" render={() => (
+                  this.state.loading ?
+                    <Loader /> : <Register />)} />
+                <Route exact path="/login/" render={() => (
+                  this.state.loading ?
+                    <Loader /> : <Login />)} />
                 <Route exact path="/rooms/:slug" component={SingleRoom} />
                 <Route component={Error} />
               </Switch>

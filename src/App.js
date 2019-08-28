@@ -1,6 +1,5 @@
 import React from "react";
-import "./App.css";
-import { CSSTransition, TransitionGroup } from "react-transition-group";
+import { Route, Switch, withRouter } from "react-router-dom";
 
 import Home from "./pages/Home";
 import Rooms from "./pages/Rooms";
@@ -11,9 +10,11 @@ import Error from "./pages/Error";
 import Navbar from "./components/Navbar";
 import Loader from '../src/components/loader/loader';
 
-import { Route, Switch, withRouter } from "react-router-dom";
 
+import "./App.css";
 import "./pageTransitions/slideTransition.scss";
+import { CSSTransition, TransitionGroup } from "react-transition-group";
+
 
 class App extends React.Component {
   constructor(props) {
@@ -68,9 +69,11 @@ class App extends React.Component {
             >
               <Switch location={location}>
                 <Route exact path="/" component={Home} />
+
                 <Route exact path="/rooms/" render={() => (
                   this.state.loading ?
                     <Loader /> : <Rooms />)} />
+
                 <Route exact path="/register/" render={() => (
                   this.state.loading ?
                     <Loader /> : <Register />)} />

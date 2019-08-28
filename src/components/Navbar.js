@@ -15,11 +15,11 @@ export default class Navbar extends Component {
   render() {
     return (
       <>
-        <section class="header-top-section">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-6">
-                <div class="info-top wow fadeInUp" data-wow-duration="2s">
+        <section className="header-top-section">
+          <div className="container">
+            <div className="row">
+              <div className="col-md-6">
+                <div className="info-top wow fadeInUp" data-wow-duration="2s">
                   <span>
                     <FaPhoneVolume /> + 358 4524 3 5144
                   </span>
@@ -29,10 +29,10 @@ export default class Navbar extends Component {
                   </span>
                 </div>
               </div>
-              <div class="col-md-6">
+              <div className="col-md-6">
                 <a
                   href="/"
-                  class="main-btn pull-right"
+                  className="main-btn pull-right"
                   data-toggle="modal"
                   data-target="#myModal"
                   id="booking_model_open"

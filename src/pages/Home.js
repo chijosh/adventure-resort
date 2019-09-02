@@ -1,14 +1,16 @@
 import React from "react";
 import Hero from "../components/Hero";
 import Banner from "../components/Banner";
-// import Header from "../components/Header";
+
 import { Link } from "react-router-dom";
 import Services from "../components/Services";
-// import Navbar from "../components/Navbar";
+
 import FeaturedRooms from "../components/FeaturedRooms/FeaturedRooms";
 
 
+
 export default function Home() {
+
   return (
     <div className="page">
       <Hero hero="defaultHero">

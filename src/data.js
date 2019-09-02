@@ -63,13 +63,13 @@ export default [
             }
           }
         },
-        {
-          fields: {
-            file: {
-              url: room4
-            }
-          }
-        }
+        // {
+        //   fields: {
+        //     file: {
+        //       url: room4
+        //     }
+        //   }
+        // }
       ]
     }
   },

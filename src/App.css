@@ -291,7 +291,7 @@ h6 {
 }
 
 .services {
-  background: var(--darkGrey);
+  background: var(--offWhite);
   text-align: center;
 }
 
@@ -306,14 +306,16 @@ h6 {
 
 .service span {
   display: inline-block;
-  color: var(--primaryColor);
+  color: #ffa902;
   font-size: 2.5rem;
   margin-bottom: 1.5rem;
 }
 
 .services h6 {
   letter-spacing: var(--mainSpacing);
-  text-transform: capitalize
+  text-transform: capitalize;
+  font-family: 'Dancing Script', cursive;
+  color: #7FBF00;
 }
 
 .services p {
@@ -2267,3 +2269,357 @@ ul.post-content li {
   position: relative;
   text-align: center;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*About CSS Start*/
+.sclass{
+	padding: 100px 0 100px;
+	position: relative;
+	border-bottom: 1px solid #f1f1f1;
+}
+.rooms-lists-wrapper.sclass,
+.testimonial-wrapper.sclass,
+.team-wrapper.sclass{
+	padding-top: 90px;
+}
+.about-class.about-wrapper.sclass{
+	padding:100px 0 ;
+}
+.about-class.about-wrapper .s-about-wrapper{
+	margin-left:-3%;
+}
+.about-class .home-about-features-images{
+	width:30.33%;
+	float: left;
+	padding:0px;
+	margin-left: 3%;
+	position: relative;
+	margin-bottom:30px;
+	overflow: hidden;
+}
+
+.about-class .home-about-features-images img,
+.about-content-area .services .rooms-thumbnail img{
+	display: block;
+    width: 100%;
+	margin:0 auto;
+	-webkit-transition: all 0.5s ease-out 0s;
+    -o-transition: all 0.5s ease-out 0s;
+    transition: all 0.5s ease-out 0s;
+}
+.about-class .home-about-features-images:hover img,
+.about-content-area .services:hover .rooms-thumbnail img{
+	transform: scale(1.15);
+    -webkit-transform: scale(1.15);
+    -moz-transform: scale(1.15);
+}
+.about-class .home-about-features-images:before, 
+.about-class .home-about-features-images:after ,
+.about-content-area .services:before,
+.about-content-area .services:after{
+    bottom: 15px;
+    content: "";
+    left: 15px;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    z-index: 2;
+
+}
+.about-class .home-about-features-images:before,
+.about-content-area .services:before{
+    -webkit-transform: scale(0,1);
+    -ms-transform: scale(0,1);
+    -o-transform: scale(0,1);
+    transform: scale(0,1);
+    border-bottom: 1px solid #fff;
+    border-top: 1px solid #fff;
+}
+.about-class .home-about-features-images:after,
+.about-content-area .services:after{
+    -webkit-transform: scale(1,0);
+    -ms-transform: scale(1,0);
+    -o-transform: scale(1,0);
+    transform: scale(1,0);
+    border-right: 1px solid #fff;
+    border-left: 1px solid #fff;
+}
+.about-class .home-about-features-images:hover:before, 
+.about-class .home-about-features-images:hover:after,
+.about-content-area .services:hover:before,
+.about-content-area .services:hover:after {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: all 0.5s ease-out 0s;
+    -o-transition: all 0.5s ease-out 0s;
+    transition: all 0.5s ease-out 0s;
+}
+.about-class .home-about-features-images .about-feature-service-title{
+	position: absolute;
+	bottom: 20px;
+	left:15px;
+	right:15px;
+	z-index: 4;
+	text-align: center;
+	-webkit-transition: all 0.5s ease-out 0s;
+    -o-transition: all 0.5s ease-out 0s;
+    transition: all 0.5s ease-out 0s;
+}
+.about-class .home-about-features-images:hover .about-feature-service-title{
+	bottom:30px;
+}
+.about-class .home-about-features-images .about-feature-service-title a{
+	color: #fff;
+	font-size: 18px;
+	font-weight:500;
+	text-decoration: none;
+	display: inline-block;
+}
+.about-class .about-services-main-content {
+    text-align: center;
+    padding-top: 35px;
+    max-width: 768px;
+    width: 100%;
+    margin: 0 auto;
+}
+.about-class  .button-links{
+	text-align: center;
+}
+.about-class  .button-links a,
+.rooms-lists-wrapper .view-all-roms a,
+.service-wrapper .button-links a{
+	text-decoration: none;
+	display: inline-block;
+	background:#2d2a27;
+	border:1px solid #2d2a27;
+	 padding: 14px 20px;
+	color:#fff;
+	-moz-transition:all 0.3s ease-in-out;
+	-webkit-transition: all  0.3s ease-in-out;
+	transition: all  0.3s ease-in-out;
+	font-size: 13px;
+	text-transform: uppercase;
+}
+.about-class  .button-links a:hover,
+.rooms-lists-wrapper .view-all-roms a:hover,
+.service-wrapper .button-links a:hover{
+	background:#d46e4e;
+	border-color: #d46e4e;;
+	color:#fff; 
+}
+.about-class .theme-text,
+.about-class .caption-text{
+	padding:0 50px;
+}
+.about-class .theme-text{
+	color:#c0b7af;
+	text-transform:uppercase;
+	font-size: 16px;
+	font-weight:500;
+	margin-bottom:15px;
+}
+.about-class .caption-text{
+	font-size: 32px;
+	margin-bottom: 10px;
+}
+.about-class .main-text{
+	font-size: 17px;
+	color:#6a6560;
+	margin-bottom: 40px;
+}
+
+/*about section end*/
+/*rooms-lists section start*/
+.rooms{
+	padding-left: 0;
+}
+.rooms-lists-wrapper.sclass .rating{
+	display: none;
+}
+.rooms-lists-wrapper .rooms li{
+    margin-bottom: 0;
+    display: inline-block;
+    width: 100%;
+}
+.rooms-lists-wrapper .rooms .hb_room .media a:before{
+    border-bottom-color:#a89477;
+    border-bottom: 157px solid #ffb606;
+    border-left: 157px solid transparent;
+}
+.rooms-lists-wrapper .rooms .hb_room .summary:hover .media a:before{
+	border-bottom-width: 185px;
+    border-left-width: 185px;
+}
+.rooms li .summary {
+    border: 1px solid #eee;
+    margin-top: 0;
+    background: #fff;
+}
+.wrap-media-price{
+	position: relative;
+}
+.rooms .summary .wrap-media-price .price{
+	bottom: 0;
+    right: 7px;
+}
+.rooms-lists-wrapper .sc-wrapper{
+	padding:30px;
+}
+.rooms-lists-wrapper .summary .title {
+    margin-bottom: 0px;
+    padding: 4px 0px 0px;
+}
+.rooms-lists-wrapper .summary .title h4{
+	margin:0;
+	font-size:auto;
+}
+.rooms-lists-wrapper .summary .title h4 a{
+	display: inline-block;
+	text-decoration: none;
+	font-family: 'Marcellus', serif;
+	font-size:26px;
+	color:#4a4a4a;
+}
+.rooms-lists-wrapper .summary .title h4 a:hover{
+	color: #e6ac4e;
+}
+
+.room-features ul{
+	list-style: none;
+	margin: 0;
+	padding-left: 0;
+}
+.rooms .room-features ul li{
+	display: inline-block;
+	color:#8a8a8a;
+	font-size:16px;
+	font-weight:500;
+	padding-left:10px;
+	margin-left:4px;
+	position: relative;
+	width:auto;
+	float: none;
+}
+.room-features ul li:nth-of-type(1){
+	padding-left: 0;
+	margin-left: 0;
+}
+.room-features ul li:before{
+	content:'';
+	width: 4px;
+	height: 4px;
+	background:#ddd;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	margin-top: -2px;
+}
+.room-features ul li:nth-of-type(1):before{
+	content:none;
+}
+.view-all-roms{
+	text-align: center;
+	margin-top:50px;
+}
+.room-features + .s-rooms-price{
+	position: relative;
+	margin-top: 28px;
+	padding-top: 28px;;
+}
+.room-features + .s-rooms-price:before{
+	content: '';
+	left: 0;
+	top: 0;
+	height:2px;
+	width: 50px;
+	background:#eeeeee;
+	position: absolute;
+}
+.rooms .hb_room .summary .sc-wrapper .rooms-features-wrapper .price{
+	position: static;
+	width: 100%;
+	height: auto;
+	text-align: left;
+}
+.rooms .hb_room .summary .sc-wrapper .rooms-features-wrapper .price span{
+	color:#8a8a8a;
+	display: inline-block;
+	font-size: 16px;
+	text-transform: uppercase;
+}
+.rooms .hb_room .summary .sc-wrapper .rooms-features-wrapper .price  .price_value,
+.rooms .hb_room .summary .sc-wrapper .rooms-features-wrapper .price  .unit {
+	color: #e6ac4e;
+}
+.rooms .hb_room .summary:hover .sc-wrapper .rooms-features-wrapper .price {
+    transform: translate(0, 0);
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+}
+.rooms .owl-nav .owl-prev,
+.rooms .owl-nav .owl-next{
+	position: absolute;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+    width: 50px;
+height: 50px;
+line-height: 50px;
+	text-align: center;
+	background:#eee;
+	color: #222;
+	font-size: 18px;
+	opacity:0;
+	visibility: hidden;
+	-moz-transition:all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+.rooms .owl-nav .owl-prev i,
+.rooms .owl-nav .owl-next i{
+		line-height:30px; 
+}
+.rooms .owl-nav .owl-prev{
+	left: 0;
+}
+.rooms .owl-nav .owl-next{
+	right: 0;
+}
+.rooms:hover .owl-nav .owl-prev,
+.rooms:hover .owl-nav .owl-next{
+	opacity: 1;
+	visibility: visible;
+}
+
+/*rooms-lists section end*/

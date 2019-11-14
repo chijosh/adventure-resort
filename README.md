@@ -1,3 +1,16 @@
+[![Node Version](https://img.shields.io/badge/Node-10.16.3-339933.svg?style=flat&logo=Node.js)]()
+[![React Version](https://img.shields.io/badge/React-16.11.0-61DAFB.svg?style=flat&logo=React)]()
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=flat&logo=Read-The-Docs)](https://opensource.org/licenses/MIT)<br/>
+
+<p align="center">
+  <a href="https://reactjs.org/">
+    <img alt="React" src="https://miro.medium.com/max/500/1*cPh7ujRIfcHAy4kW2ADGOw.png" width="100" />
+  </a>
+</p>
+<h1 align="center">
+  React 
+</h1>
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

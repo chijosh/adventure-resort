@@ -8,13 +8,11 @@ import Register from "./pages/register/Register";
 import Login from "./pages/login/Login";
 import Error from "./pages/Error";
 import Navbar from "./components/Navbar";
-import Loader from '../src/components/loader/loader';
-
+import Loader from "../src/components/loader/loader";
 
 import "./App.css";
 import "./pageTransitions/slideTransition.scss";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
-
 
 class App extends React.Component {
   constructor(props) {
@@ -28,8 +26,8 @@ class App extends React.Component {
     setTimeout(() => {
       this.setState({
         loading: false
-      })
-    }, 2000);
+      });
+    }, 1000);
   }
   componentWillReceiveProps() {
     this.setState({ prevDepth: this.getPathDepth(this.props.location) });
@@ -70,16 +68,24 @@ class App extends React.Component {
               <Switch location={location}>
                 <Route exact path="/" component={Home} />
 
-                <Route exact path="/rooms/" render={() => (
-                  this.state.loading ?
-                    <Loader /> : <Rooms />)} />
+                <Route
+                  exact
+                  path="/rooms/"
+                  render={() => (this.state.loading ? <Loader /> : <Rooms />)}
+                />
 
-                <Route exact path="/register/" render={() => (
-                  this.state.loading ?
-                    <Loader /> : <Register />)} />
-                <Route exact path="/login/" render={() => (
-                  this.state.loading ?
-                    <Loader /> : <Login />)} />
+                <Route
+                  exact
+                  path="/register/"
+                  render={() =>
+                    this.state.loading ? <Loader /> : <Register />
+                  }
+                />
+                <Route
+                  exact
+                  path="/login/"
+                  render={() => (this.state.loading ? <Loader /> : <Login />)}
+                />
                 <Route exact path="/rooms/:slug" component={SingleRoom} />
                 <Route component={Error} />
               </Switch>

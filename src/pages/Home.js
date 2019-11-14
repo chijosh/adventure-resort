@@ -7,10 +7,7 @@ import Services from "../components/Services";
 
 import FeaturedRooms from "../components/FeaturedRooms/FeaturedRooms";
 
-
-
 export default function Home() {
-
   return (
     <div className="page">
       <Hero hero="defaultHero">
